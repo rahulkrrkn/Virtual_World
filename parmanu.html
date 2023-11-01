@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POKHARAN NUCLEAR TEST</title>
+  <style>
+    h4{
+text-align: center;
+text-transform: uppercase;
+color: white;
+border: 5px solid yellow;
+display: inline;
+border-radius: 20px;
+background-color: purple;
+margin: 10px;
+}
+    img.k1{
+      height: 60%;
+    }
+    div.ss3{
+      background: brown;
+      border-radius: 5px;
+      border: 3px solid yellow;
+      color: white;
+    }
+    div.row{
+      background-color: brown;
+      border: 3px solid yellow;
+      color: white;
+      
+      
+    }
+    a.hovers{
+      background-color: gray;
+    }
+    div.column{
+      background-color: brown;
+      border: 3px solid yellow;
+      color: white;
+      height: 600px;
+      
+      
+    }
+    div.card{
+      background-color: purple;
+      border: 3px solid yellow;
+      color: white;
+      height: 600px;
+      
+    }
+      html {
+        box-sizing: border-box;
+      }
+      
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      
+      .container {
+        padding: 0 16px;
+      }
+      
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: grey;
+      }
+      
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+p.title{
+color: white;
+text-shadow: 0.5px 0.5px yellow;
+}
+img.ddd3{
+margin-left: 25%;
+}
+
+img.dd2{
+margin-left: 35%;
+}
+ul.dd3{
+color: white;
+text-align: center;
+}
+a.hovers:hover{
+background-color: yellow;
+}
+
+body{
+background-color: black;
+background-repeat: no-repeat;
+}
+h1{
+text-align: center;
+text-transform: uppercase;
+color: white;
+border: 5px solid yellow;
+display: inline;
+border-radius: 20px;
+background-color: purple;
+margin: 10px;
+}
+{
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0px;
+      font-family: 'segoe ui';
+     
+    }
+    .mb{
+  background-image: url('https://i.makeagif.com/media/8-02-2016/xGQOmg.gif');
+  background-repeat:repeat-y;
+  background-size: 1500px 1000px;
+  animation: slider2 30s infinite linear;
+  
+}
+    
+    .nav {
+      height: 50px;
+      width: 100%;
+      background-color: #0800ff;
+      position: fixed;
+      top: 0px;
+      
+    }
+    
+    .nav > .nav-header {
+      display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 22px;
+      color: #fff;
+      padding: 10px 10px 10px 10px;
+    }
+    
+    .nav > .nav-btn {
+      display: none;
+    }
+    
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+    }
+    
+    .nav > .nav-links > a {
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
+    }
+                                                 /* When Hove in Negivition */
+    .nav > .nav-links > a:hover {
+      background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+      border-radius: 50px;
+      color: rgb(0, 0, 0);
+      animation: rotate 1.5s linear infinite;
+    }
+    @keyframes rotate {
+      0%{
+        filter: hue-rotate(0deg);
+      }
+      100%{
+        filter: hue-rotate(360deg);
+      }
+      }
+      .nav > #nav-check {
+      display: none;
+      }
+      
+      @media (max-width:730px) {
+      .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+        
+      }
+      .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+    }
+    .div_for_top_margin{
+      height: 50px;
+    }
+                                                /* Negivition Bar End */
+
+
+
+      
+                                                                                                  
+                                                                                                  /* FOOTER CODE START */
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+font-family: Roboto;
+}
+section{
+margin: 0%;
+padding: 0%;
+}
+
+.footer-distributed {
+  background-color: #ffffff;
+/* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 4px 0px;
+  /* margin-left: -10%; */
+  /* margin-right: -60%; */
+  
+}
+
+
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+text-decoration: none;
+color: inherit;
+transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+content: "·";
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+
+/* .footer-distributed .footer-links .link-1:before {
+content: none;
+} */
+
+.footer-distributed .footer-right {
+float: right;
+margin-top: 6px;
+max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+display: inline-block;
+width: 35px;
+height: 35px;
+background-color: #33383b;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-left: -10px;
+transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+.footer-distributed .footer-left, .footer-distributed .footer-right {
+  text-align: center;
+}
+.footer-distributed .footer-right {
+  float: none;
+  margin: 0 auto 20px;
+}
+.footer-distributed .footer-left p.footer-links {
+  line-height: 1.8;
+}
+}
+
+
+.flh {
+margin: 0% auto 0;
+padding-top: 0%;
+
+/* width: 590px; */
+  width: 100%;
+height: 30px;
+background-color: #ff0000;
+border-radius: 83px;
+font-size: 0;
+}
+.flh {
+line-height: 30px;
+height: 100%;
+font-size: 15px;
+display: inline-block;
+position: relative;
+z-index: 1;
+text-decoration: none;
+text-transform: uppercase;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+
+@keyframes rotate {
+0%{
+  filter: hue-rotate(0deg);
+}
+100%{
+  filter: hue-rotate(360deg);
+}
+}
+
+.flh:after{
+position: absolute;
+content: "";
+background: #fff;
+ background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+              /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+width: 100%;
+height: 30px;
+left: -2%;
+top: -5%; 
+              /* if the font is 'Oswald'*/
+border-radius: 50px;
+transform: scaleY(0);
+z-index: -1;
+animation: rotate 1.5s linear infinite;
+transition: transform 0.3s ease;
+}
+.flh:hover:after{
+transform: scaleY(1);
+}
+.flh:hover{
+color: #fff;
+}
+
+.lifc{
+  list-style-type: none;
+}
+
+.abcc{
+  display: flex;
+}
+
+.lifc{
+  margin-left: 10px;
+
+}
+
+.pfc{
+  margin-left: 50px;
+}
+                                                                      /* Footer Code End */
+
+
+
+
+
+
+
+
+
+
+      
+      </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />      
+  
+</head>
+<body class="mb">
+
+
+  <!-- Negivition Bar Start -->
+  <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+                                                      <!-- Logo Link Below -->
+          <img height="30px" width="150px"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png" alt="Logo Loding">
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/" target="_blank"><B> HOME</B></a>
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B> ABOUT US</B></a>
+        <a href="https://gpbgp.org/" target="_blank"><B>INSTITUTE</B></a>
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html" target="_blank"><B>CONTACT</B></a>
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B>DEVELOPER</B></a>
+      </div>
+    </div>
+                                                                  <!-- Negivition Bar End -->
+<p>
+  <div class="ss3">
+  <img src="https://pbs.twimg.com/card_img/1630532745276399616/bDT2hb9x?format=jpg&name=small" alt="" height="550px" width="100%">
+  </div>
+</p>
+  <h1>Pokhran-II</h1>
+    <p>
+    <div class="ss3">
+        The Pokhran-II tests were a series of five nuclear bomb test explosions conducted by India at the Indian Army's Pokhran Test Range in May 1998.[3] It was the second instance of nuclear testing conducted by India; the first test, code-named Smiling Buddha, was conducted in May 1974.[4]
+
+        The tests achieved their main objective of giving India the capability to build fission and thermonuclear weapons with yields up to 200 kilotons.[1] The then-Chairman of the Indian Atomic Energy Commission described each one of the explosions of Pokhran-II to be "equivalent to several tests carried out by other nuclear weapon states over decades".[5] Subsequently, India established computer simulation capability to predict the yields of nuclear explosives whose designs are related to the designs of explosives used in this test.[1]
+        
+        Pokhran-II consisted of five detonations, the first of which was a fusion bomb while the remaining four were fission bombs.[3] The tests were initiated on 11 May 1998, under the assigned code name Operation Shakti, with the detonation of one fusion and two fission bombs.[3] On 13 May 1998, two additional fission devices were detonated,[6] and the Indian government led by Prime Minister Atal Bihari Vajpayee shortly convened a press conference to declare India as a full-fledged nuclear state.[6] The tests resulted in a variety of sanctions against India by a number of major countries including Japan and the United States.
+        
+        Many names have been assigned to these tests; originally these were collectively called Operation Shakti–98, and the five nuclear bombs were designated Shakti-I through to Shakti-V. More recently, the operation as a whole has come to be known as Pokhran II, and the 1974 explosion as Pokhran-I
+        </div>
+    </p>
+    <h4>Nuclear bomb project</h4>
+    <p>
+    <div class="ss3">
+        Efforts towards building the nuclear bomb, infrastructure, and research on related technologies have been undertaken by India since World War II. Origins of India's nuclear program date back to 1944 when nuclear physicist Homi Bhabha began persuading the Indian National Congress towards the harnessing of nuclear energy— a year later he established the Tata Institute of Fundamental Research (TIFR).[8]
+
+        In 1950s, the preliminary studies were carried out at the BARC and plans were developed to produce plutonium and other bomb components. In 1962, India and China engaged in the disputed northern front, and was further intimidated with a Chinese nuclear test in 1964. Direction towards militarisation of the nuclear program slowed down when Vikram Sarabhai became its head and Lal Bahadur Shastri showed little interest after becoming the Prime Minister in that year.[8]
+        
+        After Indira Gandhi became Prime Minister in 1966, the nuclear program was consolidated when physicist Raja Ramanna joined the efforts. Another nuclear test by China eventually led to India's decision to build nuclear weapons in 1967 and conduct its first nuclear test, Smiling Buddha, in 1974.</p>
+        </div>
+    </p>
+        <h4>Development teams</h4>
+        <p>
+            <div class="ss3">
+            <ul >
+                <li>Dr. R. Chidambaram, Chairman of the Atomic Energy Commission and the Department of Atomic energy.
+                </li>
+
+                <li>Dr. A.P.J. Abdul Kalam (later, President of India), Scientific Adviser to the prime minister and Head of the DRDO.</li>
+                <li>S Ramakrishnan was a Director who helped in developing the liquid propulsion system of the PSLV launcher.</li>
+                <li>. Kunhikrishnan was a Project Director in the PSLV programme. He was also a Mission director of PSLV-C25/Mars Orbiter Mission.</li>
+                <li>Dr. K. Santhanam; Director, Test Site Preparations.</li>
+                <li>Dr. G. R. Dikshitulu; Senior Research Scientist B.S.O.I Group, Nuclear Materials Acquisition.
+                </li>
+                <li>Dr. Anil Kakodkar, Director of BARC.</li>
+                <li>Dr. Satinder Kumar Sikka, Director; Thermonuclear Weapon Development.</li>
+                <li>V Kesava Raju was the Mars Orbiter Mission Director.</li>
+                <li>Dr. M. S. Ramakumar, Director of Nuclear Fuel and Automation Manufacturing Group; Director, Nuclear Component Manufacture.</li>
+                <li>Dr. D.D. Sood, Director of Radiochemistry and Isotope Group; Director, Nuclear Materials Acquisition.</li>
+                <li>Dr. S.K. Gupta, Solid State Physics and Spectroscopy Group; Director, Device Design & Assessment.</li>
+                <li>Dr. G. Govindraj, Associate Director of Electronic and Instrumentation Group; Director, Field Instrumentation.</li>
+                
+
+                </li>
+                <li>B Jayakumar was an Associate Project Director at the PSLV programme who was responsible for testing the rocket systems.</li>
+                <li>MS Pannirselvam was the Chief General Manager at the Sriharikota Rocket port and was tasked to maintain launch schedules.</li>
+            </ul>
+            </div>
+    
+        </p>
+        <h2>Responsive "Meet The Team" Section</h2>
+<p>Resize the browser window to see the effect.</p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="k1" src="https://img.etimg.com/thumb/msid-78679444,width-640,resizemode-4,imgsize-808526/universal-healthcare-plan.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>INDIAN SPACE SCIENTIST</h2>
+        <p class="title"><b>A. P. J. Abdul Kalam</b></p>
+        <p>Dr S Ramakrishnan was a renowned aerospace engineer with accomplishments in the arena of launch vehicle engineering and development.</p>
+        <p><a class="hovers" href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">READ MORE</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="k1" src="http://www.firstpost.com/wp-content/uploads/2014/09/S-Ramakrishnan2_wikipedia.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>INDIAN SPACE SCIENTIST</h2>
+        <p class="title"><b>S Ramakrishnan</p></b>
+        <p>Moon man of india ,is  an indian scientist working as vice president for Tamli nadu satate Council for science and Technology (TNSCST)  He was recognized by several professional bodies and was Fellow of the Indian National Academy of Engineering and a Member of the International Academy of Astronautics (IAA). (IAA).</p>
+        <p><a class="hovers" href="https://en.wikipedia.org/wiki/Mylswamy_Annadurai">READ MORE</a></p>
+    
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="k1" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202112/Indiragandhi_1200x768.jpeg?size=1200:675" alt="John" style="width: 100%;">
+      <div class="container">
+        <h2>PM OF INDIA</h2>
+        <p class="title">Indira Gandhi</p>
+        <p>Indira Priyadarshini Gandhi 19 November 1917 – 31 October 1984) was an Indian politician and stateswoman who served as the third prime minister of India from 1966 to 1977 and from 1980 until her assassination in 1984. She was India's first, and to date.(TTC).</p>
+        <p><a class="hovers" href="https://en.wikipedia.org/wiki/Indira_Gandhi">READ MORE</a></p>
+      </div>
+    </div>
+  </div>
+</div class="ss3">
+
+        <h4>Post-Smiling Buddha</h4>
+        <p>
+        <div class="ss3">
+            Responding to Smiling Buddha,[10] the Nuclear Suppliers Group severely affected India's nuclear program.[11] The world's major nuclear powers imposed technological embargo on India and Pakistan, which was on its own technological race to match India's achievement.[11] The nuclear program struggled for years to gain credibility and its progress was crippled by the lack of indigenous resources and dependence on imported technology and technical assistance.[11] Prime Minister Indira Gandhi declared to the IAEA that India's nuclear program was not for military purposes, despite authorising preliminary work on the hydrogen bomb design.
+        </Div>
+        </p>
+        <h1>Announcement</h1>
+        <p>
+        <div class="ss3">
+            The primary objective of the mission is to develop the technologies required for designing, planning, management and operations of an interplanetary mission.[25] The secondary objective is to explore Mars' surface features, morphology, mineralogy and Martian atmosphere using indigenous scientific instruments.
+            The main objectives are to develop the technologies required for designing, planning, management and operations of an interplanetary mission comprising the following major tasks:
+            Having tested weaponized nuclear warheads in the Pokhran-II series, India became the sixth country to join the nuclear club.[25] Shortly after the tests, a press meet was convened at the Prime Minister's residence in New Delhi. Prime Minister Atal Bihari Vajpayee appeared before the press corps and made the following short statement:
+
+            Today, at 15:45 hours, India conducted three underground nuclear tests in the Pokhran range. The tests conducted today were with a fission device, a low yield device and a thermonuclear device. The measured yields are in line with expected values. Measurements have also confirmed that there was no release of radioactivity into the atmosphere. These were contained explosions like the experiment conducted in May 1974. I warmly congratulate the scientists and engineers who have carried out these successful tests.
+        </div>
+        </p>
+        <img src="data:image/jpeg;base64,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" alt="Forest" width="19%" height="120">
+    <img src="https://s2.dmcdn.net/v/SE_9B1UpIM-9obki9/x1080" alt="Mountains" width="19%" height="120">
+    <img src="https://static.toiimg.com/photo/msid-89881058/89881058.jpg" alt="Italy" width="19%" height="120">
+    <img src="https://smedia2.intoday.in/indiatoday/images/stories/2017May/pokh1_051617063932.jpg" alt="Italy" width="19%" height="120">
+    <img src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190513172549-priscilla-nuclear-test.jpg" alt="Italy" width="19%" height="120">
+    <section></section>
+<footer class="footer-distributed">
+    <div class="footer-right">
+        <table>
+            <tr>
+                <ul class="a12345">
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-github"></i></a></li></td>
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-linkedin"></i></a></li></td>
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-twitter"></i></a></li></td>
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-instagram"></i></a></li></td>
+                </ul>
+            </tr>
+        </table>
+    </div>
+    <div class="footer-left">
+        <p class="footer-links">
+            <ul class="abcc">
+<li class="lifc"><a class="link-1" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/"><b class="flh"> Home</b></a></li>
+<!-- <li class="lifc"><a class="link-2" href="developer.html"><b class="flh">About</b></a></li> -->
+<li class="lifc"><a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a></li>
+<li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html"><b class="flh">Contact</b></a></li>
+<li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><b class="flh"> Developer </b></a></li>
+<li class="lifc"><a class="link-2" href="#"><b class="flh"></b></a></li>
+            </ul>
+        </p>
+        <p class="pfc">Project :-  <b>Virtual World</b> 
+          DEVELOPER <b> RAHUL,</b> <br>
+           <b> Shubham,</b> 
+           <b> Amarjeet,</b> 
+       <b> Ravi Ranjan</b> <br> in &copy; Feb 2023 </p>
+    </div>
+</footer>
+</body>
+</html>

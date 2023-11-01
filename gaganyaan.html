@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaganyaan</title>
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+section{
+  margin: 0%;
+  padding: 0%;
+}
+
+.footer-distributed {
+    background-color: #ffffff;
+  /* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 4px 0px;
+    /* margin-left: -10%; */
+    /* margin-right: -60%; */
+    
+}
+
+
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+  content: none;
+} */
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: -10px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+
+.flh {
+	margin: 0% auto 0;
+	padding-top: 0%;
+	
+	/* width: 590px; */
+    width: 100%;
+	height: 30px;
+	background-color: #ff0000;
+	border-radius: 83px;
+	font-size: 0;
+}
+.flh {
+	line-height: 30px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+  @keyframes rotate {
+	0%{
+	  filter: hue-rotate(0deg);
+	}
+	100%{
+	  filter: hue-rotate(360deg);
+	}
+  }
+
+  .flh:after{
+	position: absolute;
+	content: "";
+	background: #fff;
+	 background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+								/*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+	width: 100%;
+	height: 30px;
+	left: -2%;
+	top: -5%; 
+								/* if the font is 'Oswald'*/
+	border-radius: 50px;
+	transform: scaleY(0);
+	z-index: -1;
+	animation: rotate 1.5s linear infinite;
+	transition: transform 0.3s ease;
+  }
+  .flh:hover:after{
+	transform: scaleY(1);
+  }
+  .flh:hover{
+	color: #fff;
+  }
+ 
+  .lifc{
+    list-style-type: none;
+  }
+
+.abcc{
+    display: flex;
+}
+
+.lifc{
+    margin-left: 10px;
+
+}
+
+.pfc{
+    margin-left: 50px;
+}
+      body{
+    background-color: black;
+    background-repeat: no-repeat;
+  }
+  h1{
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   border: 5px solid yellow;
+   display: inline;
+   border-radius: 20px;
+   background-color: purple;
+  }
+  h4{
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   border: 5px solid yellow;
+   display: inline;
+   border-radius: 20px;
+   background-color: purple;
+  }
+  div.a1{
+    border: 2px solid yellow;
+    background-color: brown;
+    border-radius: 10px;
+    color: black;
+    width: 100%;
+  }
+ 
+  .J{
+    background-color: black;
+  }
+  #c1{
+    height:100px;}
+    img.aa7{
+      height: 550px;
+      width: 100%;
+    }
+      
+     
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0px;
+        font-family: 'segoe ui';
+       
+      }
+      .mb{
+    background-image: url('https://i.makeagif.com/media/8-02-2016/xGQOmg.gif');
+    background-size: 1500px 1000px;
+    animation: slider2 30s infinite linear;
+  }
+      
+      .nav {
+        height: 50px;
+        width: 100%;
+        background-color: #0800ff;
+        /* position: fixed; */
+        top: 0px;
+        position: fixed;
+        
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+
+      }
+      
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+      }
+      
+      .nav > .nav-btn {
+        display: none;
+      }
+      
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 18px;
+      }
+      
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #efefef;
+      }
+                                                   /* When Hove in Negivition */
+      .nav > .nav-links > a:hover {
+        background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+        border-radius: 50px;
+        color: rgb(0, 0, 0);
+        animation: rotate 1.5s linear infinite;
+      }
+      @keyframes rotate {
+        0%{
+          filter: hue-rotate(0deg);
+        }
+        100%{
+          filter: hue-rotate(360deg);
+        }
+        }
+        .nav > #nav-check {
+        display: none;
+        }
+        
+        @media (max-width:730px) {
+        .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        }
+        .nav > .nav-btn > label {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 13px;
+        }
+        .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+        .nav > .nav-btn > label > span {
+          display: block;
+          width: 25px;
+          height: 10px;
+          border-top: 2px solid #eee;
+        }
+        .nav > .nav-links {
+          position: absolute;
+          display: block;
+          width: 100%;
+          background-color: #333;
+          height: 0px;
+          transition: all 0.3s ease-in;
+          overflow-y: hidden;
+          top: 50px;
+          left: 0px;
+          
+        }
+        .nav > .nav-links > a {
+          display: block;
+          width: 100%;
+        }
+        .nav > #nav-check:not(:checked) ~ .nav-links {
+          height: 0px;
+        }
+        .nav > #nav-check:checked ~ .nav-links {
+          height: calc(100vh - 50px);
+          overflow-y: auto;
+        }
+      }
+      .div_for_top_margin{
+        height: 50px;
+      }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+         clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="mb">
+
+
+  <!-- Negivition Bar Start -->
+  <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+                                                      <!-- Logo Link Below -->
+          <img height="30px" width="150px"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png" alt="Logo Loding">
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/" target="_blank"><B> HOME</B></a>
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B> ABOUT US</B></a>
+        <a href="https://gpbgp.org/" target="_blank"><B>INSTITUTE</B></a>
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html" target="_blank"><B>CONTACT</B></a>
+        <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B>DEVELOPER</B></a>
+        </div>
+    </div>
+<p>
+  <div><br><br>
+  <img class="aa7" src="https://pbs.twimg.com/media/Fp--cPbXoAAqUvr?format=jpg&name=4096x4096">
+  </div>
+</p>
+<p></p>
+  <h1>Gaganyaan</h1>
+  <div class="a1">
+
+    <p>Gaganyaan project envisages demonstration of human spaceflight capability by launching crew of 3 members to an orbit of 400 km for a 3 days mission and bring them back safely to earth, by landing in Indian sea waters.
+
+        The project is accomplished through an optimal strategy by considering inhouse expertise, experience of Indian industry, intellectual capabilities of Indian academia & research institutions along with cutting edge technologies available with international agencies. The pre-requisites for Gaganyaan mission include development of many critical technologies including human rated launch vehicle for carrying crew safely to space, Life Support System to provide an earth like environment to crew in space, crew emergency escape provision and evolving crew management aspects for training, recovery and rehabilitation of crew.
+        
+        Various precursor missions are planned for demonstrating the Technology Preparedness Levels before carrying out the actual Human Space Flight mission. These demonstrator missions include Integrated Air Drop Test (IADT), Pad Abort Test (PAT) and Test Vehicle (TV) flights. Safety and reliability of all systems will be proven in unmanned missions preceding manned mission.</p>
+    </div>
+    <p></p>
+    <h1>LVM3 - HLVM3</h1>
+    <p></p>
+    <div class="a1">
+      <p>LVM3 rocket - The well proven and reliable heavy lift launcher of ISRO, is identified as the launch vehicle for Gaganyaan mission. It consists of solid stage, liquid stage and cryogenic stage. All systems in LVM3 launch vehicle are re-configured to meet human rating requirements and christened Human Rated LVM3. HLVM3 will be capable of launching the Orbital Module to an intended Low Earth Orbit of 400 km.
+
+        HLVM3 consists of Crew Escape System (CES) powered by a set of quick acting, high burn rate solid motors which ensures that Crew Module along with crew is taken to a safe distance in case of any emergency either at launch pad or during ascent phase.</p>
+
+        </div>
+        <p></p>
+        <h1>New technologies</h1>
+        <p>
+            <div class="a1">
+          <p>Human safety is of paramount importance in Gaganyaan mission. In order to ensure the same, various new technologies comprising of Engineering systems and Human centric systems are being developed and realised.</p>
+            </div>
+        <p></p>
+        <h1>Crew training</h1>
+        <p></p>
+        <div class="a1">
+<p>Astronaut Training Facility established in Bengaluru caters to Classroom training, Physical Fitness training, Simulator training and Flight suit training. Training modules cover academic courses, Gaganyaan Flight Systems, Micro-gravity familiarization through Parabolic Flights, Aero-medical training, Recovery & Survival training, mastering of Flight Procedures and training on Crew Training Simulators. Aero medical training, Periodical flying practice and Yoga are also included as part of the training..</p>
+</div>
+<p></p>
+<h4>Milestones achieved so far</h4>
+<p></p>
+<div class="a1">
+    
+    <img src="https://www.isro.gov.in/media_isro/image/gaganyaan/Gaganyaan_Test/image4.png.webp" alt="" style="width: 19.2%; height:120px;">
+   
+    <img src="https://pbs.twimg.com/media/EFfgtfQX0AApyHD?format=jpg&name=small" alt="" style="width: 19.3%; height:120px;">
+    <img src="https://pbs.twimg.com/media/EE_HOW3XoAAEl5x?format=jpg&name=small" alt="" style="width: 19.2%; height:120px;">
+   
+  
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBPzyLT-IVIlVNW4aISzDC9ijn1BxpbSrhSw&usqp=CAU" alt="" style="width: 19.3%; height:120px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-MqsM25E0_tCzck-K1Fskjz1MM4GWBC3YQ&usqp=CAU" alt="" style="width: 19.2%; height:120px;"><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSn8baohKmwNoEvSXRQZw3cH5QislaWtfNA&usqp=CAU" alt="" style="width: 19.5%; height:120px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYEU41JPzY7hRf1nhH_yskQLd4oxh9qlHoLQ&usqp=CAU" alt="" style="width: 19.3%; height:120px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM3hWas7yDQ0fNICkizjvzVpZCGLmU9Z8tug&usqp=CAU" alt="" style="width: 19.2%; height:120px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_5_KYjM2XL99BD4N-KVKz5N2Pw1JZFc8TA&usqp=CAU" alt="" style="width: 19.2%; height:120px;">
+  <img src="https://pbs.twimg.com/profile_banners/2253142422/1628590403/1080x360" alt="Forest" width="19.3%" height="120px;">
+    
+</div>
+<section></section>
+<footer class="footer-distributed">
+    <div class="footer-right">
+        <table>
+            <tr>
+                <ul class="a12345">
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-github"></i></a></li></td>
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-linkedin"></i></a></li></td>
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-twitter"></i></a></li></td>
+                <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-instagram"></i></a></li></td>
+                </ul>
+            </tr>
+        </table>
+    </div>
+    <div class="footer-left">
+        <p class="footer-links">
+            <ul class="abcc">
+<li class="lifc"><a class="link-1" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/"><b class="flh"> Home</b></a></li>
+<!-- <li class="lifc"><a class="link-2" href="developer.html"><b class="flh">About</b></a></li> -->
+<li class="lifc"><a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a></li>
+<li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html"><b class="flh">Contact</b></a></li>
+<li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><b class="flh"> Developer </b></a></li>
+<li class="lifc"><a class="link-2" href="#"><b class="flh"></b></a></li>
+            </ul>
+        </p>
+        <p class="pfc">Project :-  <b>Virtual World</b> 
+          DEVELOPER <b> RAHUL,</b> <br>
+           <b> Shubham,</b> 
+           <b> Amarjeet,</b> 
+       <b> Ravi Ranjan</b> <br> in &copy; Feb 2023 </p>
+    </div>
+</footer>
+        
+    
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Mission</title>
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+section{
+  margin: 0%;
+  padding: 0%;
+}
+
+.footer-distributed {
+    background-color: #ffffff;
+  /* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 4px 0px;
+    /* margin-left: -10%; */
+    /* margin-right: -60%; */
+    
+}
+
+
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* .footer-distributed .footer-links .link-1:before {
+  content: none;
+} */
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: -10px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+
+.flh {
+	margin: 0% auto 0;
+	padding-top: 0%;
+	
+	/* width: 590px; */
+    width: 100%;
+	height: 30px;
+	background-color: #ff0000;
+	border-radius: 83px;
+	font-size: 0;
+}
+.flh {
+	line-height: 30px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+
+  @keyframes rotate {
+	0%{
+	  filter: hue-rotate(0deg);
+	}
+	100%{
+	  filter: hue-rotate(360deg);
+	}
+  }
+
+  .flh:after{
+	position: absolute;
+	content: "";
+	background: #fff;
+	 background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+								/*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+	width: 100%;
+	height: 30px;
+	left: -2%;
+	top: -5%; 
+								/* if the font is 'Oswald'*/
+	border-radius: 50px;
+	transform: scaleY(0);
+	z-index: -1;
+	animation: rotate 1.5s linear infinite;
+	transition: transform 0.3s ease;
+  }
+  .flh:hover:after{
+	transform: scaleY(1);
+  }
+  .flh:hover{
+	color: #fff;
+  }
+ 
+  .lifc{
+    list-style-type: none;
+  }
+
+.abcc{
+    display: flex;
+}
+
+.lifc{
+    margin-left: 10px;
+
+}
+
+.pfc{
+    margin-left: 50px;
+}
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        /* amarjeet p.css page linking */
+        body{
+    background-color: black;
+    background-repeat: no-repeat;
+  }
+  h1{
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   border: 5px solid yellow;
+   display: inline;
+   border-radius: 20px;
+   background-color: purple;
+  }
+  .J{
+    background-color: black;
+  }
+  #c1{
+    height: 100px;
+  }
+  div.a1{
+    border: 3px solid yellow;
+    background-color: brown;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+  }
+  div.column{
+    border: 2px solid yellow;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    color: black;
+    height: 500px;
+  }
+  div.container{
+    border: 2px solid rgb(157, 157, 48);
+    background-color: rgba(255, 255, 0, 0.663);
+    border-radius: 10px;
+    color: black;
+    
+  }
+  div.card{
+    border: 2px solid yellow;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    color: black;
+  }
+  
+
+  * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0px;
+        font-family: 'segoe ui';
+       
+      }
+      .mb{
+    background-image: url('https://i.makeagif.com/media/8-02-2016/xGQOmg.gif');
+    background-size: 1500px 1000px;
+    animation: slider2 30s infinite linear;
+  }
+      
+      .nav {
+        height: 50px;
+        width: 100%;
+        background-color: #0800ff;
+        position: fixed;
+        top: 0px;
+        
+      }
+      
+      .nav > .nav-header {
+        display: inline;
+      }
+      
+      .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+      }
+      
+      .nav > .nav-btn {
+        display: none;
+      }
+      
+      .nav > .nav-links {
+        display: inline;
+        float: right;
+        font-size: 18px;
+      }
+      
+      .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #efefef;
+      }
+                                                   /* When Hove in Negivition */
+      .nav > .nav-links > a:hover {
+        background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+        border-radius: 50px;
+        color: rgb(0, 0, 0);
+        animation: rotate 1.5s linear infinite;
+      }
+      @keyframes rotate {
+        0%{
+          filter: hue-rotate(0deg);
+        }
+        100%{
+          filter: hue-rotate(360deg);
+        }
+        }
+        .nav > #nav-check {
+        display: none;
+        }
+        
+        @media (max-width:730px) {
+        .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        }
+        .nav > .nav-btn > label {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 13px;
+        }
+        .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+        .nav > .nav-btn > label > span {
+          display: block;
+          width: 25px;
+          height: 10px;
+          border-top: 2px solid #eee;
+        }
+        .nav > .nav-links {
+          position: absolute;
+          display: block;
+          width: 100%;
+          background-color: #333;
+          height: 0px;
+          transition: all 0.3s ease-in;
+          overflow-y: hidden;
+          top: 50px;
+          left: 0px;
+          
+        }
+        .nav > .nav-links > a {
+          display: block;
+          width: 100%;
+        }
+        .nav > #nav-check:not(:checked) ~ .nav-links {
+          height: 0px;
+        }
+        .nav > #nav-check:checked ~ .nav-links {
+          height: calc(100vh - 50px);
+          overflow-y: auto;
+        }
+      }
+      .div_for_top_margin{
+        height: 50px;
+      }
+  
+
+  
+        </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="mb">
+
+
+    <!-- Negivition Bar Start -->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+                                                        <!-- Logo Link Below -->
+            <img height="30px" width="150px"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png" alt="Logo Loding">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+          <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/" target="_blank"><B> HOME</B></a>
+          <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B> ABOUT US</B></a>
+          <a href="https://gpbgp.org/" target="_blank"><B>INSTITUTE</B></a>
+          <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html" target="_blank"><B>CONTACT</B></a>
+          <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B>DEVELOPER</B></a>
+        </div>
+</div><br><br>
+
+
+<p></p>
+  <div class="a1">
+  <img src="https://pbs.twimg.com/profile_banners/2765974980/1411494627/1080x360" width="100%">
+
+  </div>
+</p>
+  <h1>Mars Orbiter Mission</h1>
+    <p>
+    <div class="a1">
+    This article is about the Indian Mars probe. For other Mars orbiters, see list of Mars orbiters and list of missions to Mars.The Mars Orbiter Mission (MOM), also called Mangalyaan,[a][11][12] was a space probe orbiting Mars since 24 September 2014. It was launched on 5 November 2013 by the Indian Space Research Organisation (ISRO).[13][14][15][16] It was India's first interplanetary mission[17] and it made ISRO the fourth space agency to achieve Mars orbit, after Roscosmos, NASA, and the European Space Agency.[18] It made India the first Asian nation to reach the Martian orbit and the first nation in the world to do so on its maiden attempt.[19][20][21][22]
+
+        The Mars Orbiter Mission probe lifted-off from the First Launch Pad at Satish Dhawan Space Centre (Sriharikota Range SHAR), Andhra Pradesh, using a Polar Satellite Launch Vehicle (PSLV) rocket C25 at 09:08 UTC on 5 November 2013.[5][23] The launch window was approximately 20 days long and started on 28 October 2013.[6] The MOM probe spent about a month in Earth orbit, where it made a series of seven apogee-raising orbital manoeuvres before trans-Mars injection on 30 November 2013 (UTC).[24] After a 298-day transit to Mars, it was put into Mars orbit on 24 September 2014.
+        
+        The mission was a "technology demonstrator" project to develop the technologies for designing, planning, management, and operations of an interplanetary mission.[25] It carried five scientific instruments.[26] The spacecraft was monitored from the Spacecraft Control Centre at ISRO Telemetry, Tracking and Command Network (ISTRAC) in Bengaluru with support from the Indian Deep Space Network (IDSN) antennae at Bengaluru, Karnataka.[27]
+        
+        On 2 October 2022, it was reported that the orbiter had irrecoverably lost communications with Earth after entering a seven-hour eclipse period in April 2022 that it was not designed to survive.[28][29][30] The following day, ISRO released a statement that all attempts to revive Mangalyaan had failed and officially declared it dead, citing the loss of fuel and battery power to the probe's instruments.</p>
+        </div>
+    </p>
+    <h1>History</h1>
+    <p>
+    <div class="a1">
+    On 23 November 2008, the first public acknowledgement of an uncrewed mission to Mars was announced by then-ISRO chairman G. Madhavan Nair.[32] The MOM mission concept began with a feasibility study in 2010 by the Indian Institute of Space Science and Technology after the launch of lunar satellite Chandrayaan-1 in 2008. Prime Minister Manmohan Singh approved the project on 3 August 2012,[33][34] after the Indian Space Research Organisation completed ₹125 crore (US$16 million) of required studies for the orbiter.[35] The total project cost may be up to ₹454 crore (US$57 million).[13][36] The satellite costs ₹153 crore (US$19 million) and the rest of the budget has been attributed to ground stations and relay upgrades that will be used for other ISRO projects.[37]
+
+        The space agency had planned the launch on 28 October 2013 but was postponed to 5 November following the delay in ISRO's spacecraft tracking ships to take up pre-determined positions due to poor weather in the Pacific Ocean.[6] Launch opportunities for a fuel-saving Hohmann transfer orbit occur every 26 months, in this case the next two would be in 2016 and 2018.[38]
+        
+        Assembly of the PSLV-XL launch vehicle, designated C25, started on 5 August 2013.[39] The mounting of the five scientific instruments was completed at Indian Space Research Organisation Satellite Centre, Bengaluru, and the finished spacecraft was shipped to Sriharikota on 2 October 2013 for integration to the PSLV-XL launch vehicle.[39] The satellite's development was fast-tracked and completed in a record 15 months,[40] partly due to using reconfigured Chandrayaan-2 orbiter bus.[41] Despite the US federal government shutdown, NASA reaffirmed on 5 October 2013 it would provide communications and navigation support to the mission "with their Deep Space Network facilities.".[42] During a meeting on 30 September 2014, NASA and ISRO officials signed an agreement to establish a pathway for future joint missions to explore Mars. One of the working group's objectives will be to explore potential coordinated observations and science analysis between the MAVEN orbiter and MOM, as well as other current and future Mars missions.[43]
+        
+        On 2 October 2022, it was reported that the orbiter had irrecoverably lost communications with Earth after entering long eclipse period in April 2022 that it was not designed to survive. At the time of communications loss it was unknown whether the probe had lost power or inadvertently realigned its Earth-facing antenna during automatic maneuvers.[28]</p>
+        </div>
+    </p>
+        <h1>Team</h1>
+        <p>
+            <div class="a1">
+            <ul >
+                <li><a href="k.Radhakrishnan">k.Radhakrishna</a> led as Chairman ISRO.</li>
+
+                <li>Mylswamy Annadurai was the Programme Director and in charge of budget management as well as direction for spacecraft configuration, schedule and resources</li>
+                <li>S Ramakrishnan was a Director who helped in developing the liquid propulsion system of the PSLV launcher.</li>
+                <li>. Kunhikrishnan was a Project Director in the PSLV programme. He was also a Mission director of PSLV-C25/Mars Orbiter Mission.</li>
+                <li>Moumita Dutta was the Project manager of the Mars Orbiter Mission</li>
+                <li>Nandini Harinath was the Deputy Operations Director of Navigation</li>
+                <li>Ritu Karidhal was the Deputy Operations Director of Navigation.</li>
+                <li>BS Kiran was the Associate Project Director of Flight Dynamics.</li>
+                <li>V Kesava Raju was the Mars Orbiter Mission Director.</li>
+                <li>V Koteswara Rao was ISRO scientific secretary.</li>
+                <li>Chandradathan was the Director of the Liquid Propulsion System.</li>
+                <li>A. S. Kiran Kumar was the Director of the Satellite Application Centre.</li>
+                <li>M. Y. S. Prasad is the Director at Satish Dhawan Space Centre. He was also the chairman at Launch Authorisation Board.</li>
+                <li>S. K. Shivakumar was a Director at the ISRO Satellite Centre. He was also a Project Director for the Deep Space Network.</li>
+                <li>Subbiah Arunan was a Project Director at Mars Orbiter Mission.
+
+                </li>
+                <li>B Jayakumar was an Associate Project Director at the PSLV programme who was responsible for testing the rocket systems.</li>
+                <li>MS Pannirselvam was the Chief General Manager at the Sriharikota Rocket port and was tasked to maintain launch schedules.</li>
+            </ul>
+            </div>
+    
+        </p>
+        <h2>Responsive "Meet The Team" Section</h2>
+<p></p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/K-Radhakrishnan-2014.jpg/480px-K-Radhakrishnan-2014.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>INDIAN SPACE SCIENTIST</h2>
+        <p class="title">KAPPILLIL RADHAKRISHNAN</p>
+        <p>K.Radhakrishn is an idian space scientist who headed the indian space Research Organisation(ISRO) b/w Nov.2009 and Dec.2014 as chairman of space commision,seretary of the Department of space and chairman of ISRO.prior the dricection</p>
+        <p><a href="https://en.wikipedia.org/wiki/K._Radhakrishnan">READ MORE</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mylswamy_Annadurai.jpg/480px-Mylswamy_Annadurai.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>INDIAN SPACE SCIENTIST</h2>
+        <p class="title">MYSLSWAMY ANNADURAI</p>
+        <p>Moon man of india ,is  an indian scientist working as vice president for Tamli nadu satate Council for science and Technology (TNSCST).</p>
+        <p><a href="https://en.wikipedia.org/wiki/Mylswamy_Annadurai">READ MORE</a></p>
+    
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" alt="John" style="width: 100%;">
+      <div class="container">
+        <h2>TEAM MEMBER</h2>
+        <p class="title">ISRO OFFICE PIC</p>
+        <p>The Indian Space Research Organisation(ISRO), over the years, has established a comprehensive global network of ground stations to provide Telemetry, Tracking and Command (TTC).</p>
+        <p><a href="https://en.wikipedia.org/wiki/Ritu_Karidhal">READ MORE</a></p>
+      </div>
+    </div>
+  </div>
+</div><br>
+<br><br>
+
+        <h1>Cost</h1>
+        <p>
+        <div class="a1">
+            The total cost of the mission was approximately ₹450 Crore (US$73 million),[45][46] making it the least-expensive Mars mission to date.[47] The low cost of the mission was ascribed by ISRO chairman K. Radhakrishnan to various factors, including a "modular approach", few ground tests and long working days (18 to 20 hours) for scientists.[48] BBC's Jonathan Amos specified lower worker costs, home-grown technologies, simpler design, and a significantly less complicated payload than NASA's MAVEN
+        </Div>
+        </p>
+        <h1>Mission objectives</h1>
+        <p>
+        <div class="a1">
+            The primary objective of the mission is to develop the technologies required for designing, planning, management and operations of an interplanetary mission.[25] The secondary objective is to explore Mars' surface features, morphology, mineralogy and Martian atmosphere using indigenous scientific instruments.
+            The main objectives are to develop the technologies required for designing, planning, management and operations of an interplanetary mission comprising the following major tasks:
+            <ul>
+                <li>Orbit manoeuvres to transfer the spacecraft from Earth-centred orbit to heliocentric trajectory and finally, capture into Martian orbit</li>
+                <li>Development of force models and algorithms for orbit and attitude (orientation) computations and analysis</li>
+                <li>Navigation in all phases</li>
+                <li>Maintain the spacecraft in all phases of the mission</li>
+                <li>Meeting power, communications, thermal and payload operation requirements</li>
+                <li>Incorporate autonomous features to handle contingency situations</li>
+                
+            </ul>
+        </div>
+        </p>
+        <img src="https://pbs.twimg.com/media/EAAcAGQWwAEkHhR?format=jpg&name=360x360" alt="Forest" width="19.3%" height="120">
+    <img src="https://pbs.twimg.com/media/ECaxHHnUcAIV8Xo?format=jpg&name=360x360" alt="Mountains" width="19.2%" height="120">
+    <img src="https://pbs.twimg.com/media/ByG6dW2CEAEsaU8?format=jpg&name=small" alt="Italy" width="19.5%" height="120">
+    <img src="https://pbs.twimg.com/media/FXipqLXaMAAtsB2?format=jpg&name=small" alt="Italy" width="19.3%" height="120">
+    <img src="https://pbs.twimg.com/media/BYSR8KBCQAAcPQV?format=jpg&name=small" alt="Italy" width="19.2%" height="120"><br>
+    <img src="https://pbs.twimg.com/media/ByTE0KQIgAA_opg?format=jpg&name=small" alt="Italy" width="19.3%" height="120">
+    <img src="https://pbs.twimg.com/media/DXwfeu0VoAER7JX?format=jpg&name=small" alt="Italy" width="19.5%" height="120">
+    <img src="https://pbs.twimg.com/media/DRZBA1_XUAAOJN5?format=jpg&name=900x900" alt="Italy" width="19.3%" height="120">
+    <img src="https://pbs.twimg.com/media/BXKxkjvCAAAEioF?format=jpg&name=900x900" alt="Italy" width="19.2%" height="120">
+    <img src="https://pbs.twimg.com/media/B_U3og1UcAAC470?format=jpg&name=240x240" alt="Italy" width="19.2%" height="120">
+    
+    <section></section>
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <table>
+                <tr>
+                    <ul class="a12345">
+                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-github"></i></a></li></td>
+                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-linkedin"></i></a></li></td>
+                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-twitter"></i></a></li></td>
+                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-instagram"></i></a></li></td>
+                    </ul>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <ul class="abcc">
+    <li class="lifc"><a class="link-1" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/"><b class="flh"> Home</b></a></li>
+    <!-- <li class="lifc"><a class="link-2" href="developer.html"><b class="flh">About</b></a></li> -->
+    <li class="lifc"><a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a></li>
+    <li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html"><b class="flh">Contact</b></a></li>
+    <li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><b class="flh"> Developer </b></a></li>
+    <li class="lifc"><a class="link-2" href="#"><b class="flh"></b></a></li>
+                </ul>
+            </p>
+            <p class="pfc">Project :-  <b>Virtual World</b> 
+              DEVELOPER <b> RAHUL,</b> <br>
+               <b> Shubham,</b> 
+               <b> Amarjeet,</b> 
+           <b> Ravi Ranjan</b> <br> in &copy; Feb 2023 </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
