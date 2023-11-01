@@ -1,107 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Economy</title>
 
   <style>
-                                                                  /*  Navigation Bar Css Start*/
+    /*  Navigation Bar Css Start*/
 
-* {
+    * {
       box-sizing: border-box;
     }
-    
+
     body {
       margin: 0px;
       font-family: 'segoe ui';
-     
+
     }
-    .mb{
-  background-image: url('https://i.makeagif.com/media/8-02-2016/xGQOmg.gif');
-  background-size: 1500px 1000px;
-  animation: slider2 30s infinite linear;
-}
-    
+
+    .mb {
+      background-image: url('https://i.makeagif.com/media/8-02-2016/xGQOmg.gif');
+      background-size: 1500px 1000px;
+      animation: slider2 30s infinite linear;
+    }
+
     .nav {
       height: 50px;
       width: 100%;
       background-color: #0800ff;
       /* position: fixed; */
       top: 0px;
-      
+
     }
-    
-    .nav > .nav-header {
+
+    .nav>.nav-header {
       display: inline;
     }
-    
-    .nav > .nav-header > .nav-title {
+
+    .nav>.nav-header>.nav-title {
       display: inline-block;
       font-size: 22px;
       color: #fff;
       padding: 10px 10px 10px 10px;
     }
-    
-    .nav > .nav-btn {
+
+    .nav>.nav-btn {
       display: none;
     }
-    
-    .nav > .nav-links {
+
+    .nav>.nav-links {
       display: inline;
       float: right;
       font-size: 18px;
     }
-    
-    .nav > .nav-links > a {
+
+    .nav>.nav-links>a {
       display: inline-block;
       padding: 13px 10px 13px 10px;
       text-decoration: none;
       color: #efefef;
     }
-                                                 /* When Hove in Negivition */
-    .nav > .nav-links > a:hover {
+
+    /* When Hove in Negivition */
+    .nav>.nav-links>a:hover {
       background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
       border-radius: 50px;
       color: rgb(0, 0, 0);
       animation: rotate 1.5s linear infinite;
     }
+
     @keyframes rotate {
-      0%{
+      0% {
         filter: hue-rotate(0deg);
       }
-      100%{
+
+      100% {
         filter: hue-rotate(360deg);
       }
-      }
-      .nav > #nav-check {
+    }
+
+    .nav>#nav-check {
       display: none;
+    }
+
+    @media (max-width:730px) {
+      .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
       }
-      
-      @media (max-width:730px) {
-      .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      }
-      .nav > .nav-btn > label {
+
+      .nav>.nav-btn>label {
         display: inline-block;
         width: 50px;
         height: 50px;
         padding: 13px;
       }
-      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+
+      .nav>.nav-btn>label:hover,
+      .nav #nav-check:checked~.nav-btn>label {
         background-color: rgba(0, 0, 0, 0.3);
       }
-      .nav > .nav-btn > label > span {
+
+      .nav>.nav-btn>label>span {
         display: block;
         width: 25px;
         height: 10px;
         border-top: 2px solid #eee;
       }
-      .nav > .nav-links {
+
+      .nav>.nav-links {
         position: absolute;
         display: block;
         width: 100%;
@@ -111,460 +122,511 @@
         overflow-y: hidden;
         top: 50px;
         left: 0px;
-        
+
       }
-      .nav > .nav-links > a {
+
+      .nav>.nav-links>a {
         display: block;
         width: 100%;
       }
-      .nav > #nav-check:not(:checked) ~ .nav-links {
+
+      .nav>#nav-check:not(:checked)~.nav-links {
         height: 0px;
       }
-      .nav > #nav-check:checked ~ .nav-links {
+
+      .nav>#nav-check:checked~.nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
       }
     }
-    .div_for_top_margin{
+
+    .div_for_top_margin {
       height: 50px;
     }
-                                                /* Negivition Bar End */
 
-
-
-      
-                                                                                                  
-                                                                                                  /* FOOTER CODE START */
+    /* Negivition Bar End */
 
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-* {
-font-family: Roboto;
-}
-section{
-margin: 0%;
-padding: 0%;
-}
-
-.footer-distributed {
-  background-color: #ffffff;
-/* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: normal 16px sans-serif;
-  padding: 4px 0px;
-  /* margin-left: -10%; */
-  /* margin-right: -60%; */
-  
-}
+    /* FOOTER CODE START */
 
 
 
-.footer-distributed p.footer-links {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ff0000;
-  margin: 0 0 10px;
-  padding: 0;
-  transition: ease .25s;
-}
 
-.footer-distributed p.footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-text-decoration: none;
-color: inherit;
-transition: ease .25s;
-}
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-.footer-distributed .footer-links a:before {
-content: "·";
-font-size: 20px;
-left: 0;
-color: #fff;
-display: inline-block;
-padding-right: 5px;
-}
+    * {
+      font-family: Roboto;
+    }
 
-/* .footer-distributed .footer-links .link-1:before {
+    section {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .footer-distributed {
+      background-color: #ffffff;
+      /* box-shadow: 0 1px 1px 0 rgba(253, 253, 253, 0.12); */
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: normal 16px sans-serif;
+      padding: 4px 0px;
+      /* margin-left: -10%; */
+      /* margin-right: -60%; */
+
+    }
+
+
+
+    .footer-distributed p.footer-links {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff0000;
+      margin: 0 0 10px;
+      padding: 0;
+      transition: ease .25s;
+    }
+
+    .footer-distributed p.footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color: inherit;
+      transition: ease .25s;
+    }
+
+    .footer-distributed .footer-links a:before {
+      content: "·";
+      font-size: 20px;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+    /* .footer-distributed .footer-links .link-1:before {
 content: none;
 } */
 
-.footer-distributed .footer-right {
-float: right;
-margin-top: 6px;
-max-width: 180px;
-}
+    .footer-distributed .footer-right {
+      float: right;
+      margin-top: 6px;
+      max-width: 180px;
+    }
 
-.footer-distributed .footer-right a {
-display: inline-block;
-width: 35px;
-height: 35px;
-background-color: #33383b;
-border-radius: 2px;
-font-size: 20px;
-color: #ffffff;
-text-align: center;
-line-height: 35px;
-margin-left: -10px;
-transition:all .25s;
-}
+    .footer-distributed .footer-right a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background-color: #33383b;
+      border-radius: 2px;
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+      margin-left: -10px;
+      transition: all .25s;
+    }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+    .footer-distributed .footer-right a:hover {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+    }
 
-.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+    .footer-distributed p.footer-links a:hover {
+      text-decoration: underline;
+    }
 
-/* Media Queries */
+    /* Media Queries */
 
-@media (max-width: 600px) {
-.footer-distributed .footer-left, .footer-distributed .footer-right {
-  text-align: center;
-}
-.footer-distributed .footer-right {
-  float: none;
-  margin: 0 auto 20px;
-}
-.footer-distributed .footer-left p.footer-links {
-  line-height: 1.8;
-}
-}
+    @media (max-width: 600px) {
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-right {
+        text-align: center;
+      }
+
+      .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+      }
+
+      .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+      }
+    }
 
 
-.flh {
-margin: 0% auto 0;
-padding-top: 0%;
+    .flh {
+      margin: 0% auto 0;
+      padding-top: 0%;
 
-/* width: 590px; */
-  width: 100%;
-height: 30px;
-background-color: #ff0000;
-border-radius: 83px;
-font-size: 0;
-}
-.flh {
-line-height: 30px;
-height: 100%;
-font-size: 15px;
-display: inline-block;
-position: relative;
-z-index: 1;
-text-decoration: none;
-text-transform: uppercase;
-text-align: center;
-color: white;
-cursor: pointer;
-}
+      /* width: 590px; */
+      width: 100%;
+      height: 30px;
+      background-color: #ff0000;
+      border-radius: 83px;
+      font-size: 0;
+    }
 
-@keyframes rotate {
-0%{
-  filter: hue-rotate(0deg);
-}
-100%{
-  filter: hue-rotate(360deg);
-}
-}
+    .flh {
+      line-height: 30px;
+      height: 100%;
+      font-size: 15px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+    }
 
-.flh:after{
-position: absolute;
-content: "";
-background: #fff;
- background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
-              /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
-width: 100%;
-height: 30px;
-left: -2%;
-top: -5%; 
-              /* if the font is 'Oswald'*/
-border-radius: 50px;
-transform: scaleY(0);
-z-index: -1;
-animation: rotate 1.5s linear infinite;
-transition: transform 0.3s ease;
-}
-.flh:hover:after{
-transform: scaleY(1);
-}
-.flh:hover{
-color: #fff;
-}
+    @keyframes rotate {
+      0% {
+        filter: hue-rotate(0deg);
+      }
 
-.lifc{
-  list-style-type: none;
-}
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
 
-.abcc{
-  display: flex;
-}
+    .flh:after {
+      position: absolute;
+      content: "";
+      background: #fff;
+      background: linear-gradient(#ea1f1f, #ea00ff, #07ff49);
+      /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+      width: 100%;
+      height: 30px;
+      left: -2%;
+      top: -5%;
+      /* if the font is 'Oswald'*/
+      border-radius: 50px;
+      transform: scaleY(0);
+      z-index: -1;
+      animation: rotate 1.5s linear infinite;
+      transition: transform 0.3s ease;
+    }
 
-.lifc{
-  margin-left: 10px;
+    .flh:hover:after {
+      transform: scaleY(1);
+    }
 
-}
+    .flh:hover {
+      color: #fff;
+    }
 
-.pfc{
-  margin-left: 50px;
-}
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-body{
-  background: #F0F0F0;
-  font-family: Open Sans ,sans-serif;
-  line-height:1.5em;
-}
-#contact {
-width: 500px;
-margin:2em auto;
-background:white;
-position: relative;
-}
-#contact::after {
-content: "";
-display: block;
-height: 30px;
-width: 90%;
-left: 5%;
-bottom: 0;
-position: absolute;
--webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
-border-radius: 100%;
-z-index: -1;
-}
-#contact article {
-  padding: 1em;
-}
-#contact h1 {
-background: #F2385A;
-font-family: Oswald ,sans-serif;
-font-size: 1.75em;
-padding: 0.6em 0 0.6em 0.4em;
-color: white;
-text-shadow: 0 0.06em 0 #424242;
-position: relative;
-}
-.contactbutton {
-background: #F2385A;
--webkit-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
-text-align: center;
-display: block;
-width: 100%;
-height: 50px;
-margin-top: 20px;
-margin-bottom: 2px;
-cursor: pointer;
-}
-.contactbutton:hover {
--webkit-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
-margin-top: 22px;
-margin-left: 2px;
-margin-bottom: 0px;
-}
-.mail {
-margin-top: 11px;
-font-size: 15px;
-display: inline-block;
-border-top: 2em solid transparent;
-border-left: 2.6em solid #832032;
-height: 0;
-width: 0;
-position: relative;
-}
-.mail:before {
-content: '';
-top: -2.5em;
-left: -2.95em;
-display: block;
-position: absolute;
-border-top: 1.2em solid #832032;
-border-left: 1.6em solid transparent;
-border-right: 1.6em solid transparent;
-border-bottom: 1em solid transparent;
-font-size: 0.8em;
-}
-.mail::after {
-display: block;
-content: "";
-position: absolute;
-border-top: 2em solid transparent;
-border-right: 2.6em solid #832032;
-height: 0;
-width: 0;
-left: -2.18em;
-bottom: 0;
-}
-#checkcontact{
-position: absolute;
-left: -9999px;
-}
-.contactform {
-overflow: hidden;
-max-height: 0px;
--webkit-transition: all linear 1s;
--moz-transition: all linear 1s;
--o-transition: all linear 1s;
--ms-transition: all linear 1s;
-transition: all linear 1s;
-}
-#checkcontact:checked + .contactform {
-max-height: 1000px;
-}
-.input_wrapper {
-position: relative;
-}
-.textarea_wrapper textarea {
-margin-top: 20px;
-display: block;
-width: 100%;
-background: white;
-border: 1px solid #DADADA;
-box-shadow: 0 0 1px 0 #E4E4E4;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-padding: 1em;
--webkit-transition: all 250ms ease;
--moz-transition: all 250ms ease;
--ms-transition: all 250ms ease;
--o-transition: all 250ms ease;
-transition: all 250ms ease;
-color: #5E5E5E;
-}
-.input_wrapper input[type="text"] {
-margin-top: 1em;
-display: block;
-width: 100%;
-background: white;
-border: 1px solid #DADADA;
-box-shadow: 0 0 1px 0 #E4E4E4;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-padding: 1em;
--webkit-transition: all 250ms ease;
--moz-transition: all 250ms ease;
--ms-transition: all 250ms ease;
--o-transition: all 250ms ease;
-transition: all 250ms ease;
-color: #5E5E5E;
-text-indent: 15%;
-}
-.input_wrapper input[type="text"]:focus {
-background: rgba(242, 56, 90, 0.05);
-box-shadow: inset 2px 2px 5px 0 #DADADA;
-outline: none;
-text-indent: 0;
-}
-.input_wrapper label {
-position: absolute;
-left: 0;
-top: 0;
-height: 100%;
-background: #F2385A;
-color: white;
-font-family: Oswald ,sans-serif;
-box-sizing: border-box;
-width: 15%;
-text-align: center;
-line-height: 2.8em;
--webkit-transition: all 250ms ease;
--moz-transition: all 250ms ease;
--ms-transition: all 250ms ease;
--o-transition: all 250ms ease;
-transition: all 250ms ease;
-}
-.input_wrapper input[type="text"]:focus + label {
-left: 85%;
-}
-.textarea_wrapper textarea {
-margin-top: 20px;
-display: block;
-width: 100%;
-  min-height:150px;
-background: white;
-border: 1px solid #DADADA;
-box-shadow: 0 0 1px 0 #E4E4E4;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-padding: 1em;
--webkit-transition: all 250ms ease;
--moz-transition: all 250ms ease;
--ms-transition: all 250ms ease;
--o-transition: all 250ms ease;
-transition: all 250ms ease;
-color: #5E5E5E;
-}
-.textarea_wrapper textarea:focus {
-background: rgba(242, 56, 90, 0.05);
-box-shadow: inset 2px 2px 5px 0 #DADADA;
-outline: none;
-}
-.submit_wrapper {
-text-align: center;
-}
-.submit_wrapper input {
-text-align: center;
-display: inline-block;
-width: 40%;
-height: 50px;
-margin-top: 1em;
-margin-bottom: 6px;
-cursor: pointer;
-background: #F2385A;
-color: white;
-font-family: Oswald ,sans-serif;
-font-size: 1em;
-border: none;
--webkit-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
--webkit-appearance: none;
-  -webkit-transition: all 250ms ease;
--moz-transition: all 250ms ease;
--ms-transition: all 250ms ease;
--o-transition: all 250ms ease;
-transition: all 250ms ease;
-}
-.submit_wrapper input:hover {
--webkit-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
-margin-top: 22px;
-margin-left: 2px;
-margin-bottom: 0px;
-}
+    .lifc {
+      list-style-type: none;
+    }
 
-@media (max-width: 500px){
-#contact {
-width: 100%;
-}
-  .input_wrapper label {
-line-height: 3.5em;
-font-size: 0.8em;
-}
-}
-                                                                      /* Footer Code End */
+    .abcc {
+      display: flex;
+    }
+
+    .lifc {
+      margin-left: 10px;
+
+    }
+
+    .pfc {
+      margin-left: 50px;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    body {
+      background: #F0F0F0;
+      font-family: Open Sans, sans-serif;
+      line-height: 1.5em;
+    }
+
+    #contact {
+      width: 500px;
+      margin: 2em auto;
+      background: white;
+      position: relative;
+    }
+
+    #contact::after {
+      content: "";
+      display: block;
+      height: 30px;
+      width: 90%;
+      left: 5%;
+      bottom: 0;
+      position: absolute;
+      -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 100%;
+      z-index: -1;
+    }
+
+    #contact article {
+      padding: 1em;
+    }
+
+    #contact h1 {
+      background: #F2385A;
+      font-family: Oswald, sans-serif;
+      font-size: 1.75em;
+      padding: 0.6em 0 0.6em 0.4em;
+      color: white;
+      text-shadow: 0 0.06em 0 #424242;
+      position: relative;
+    }
+
+    .contactbutton {
+      background: #F2385A;
+      -webkit-box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
+      box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
+      text-align: center;
+      display: block;
+      width: 100%;
+      height: 50px;
+      margin-top: 20px;
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+
+    .contactbutton:hover {
+      -webkit-box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+      box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+      margin-top: 22px;
+      margin-left: 2px;
+      margin-bottom: 0px;
+    }
+
+    .mail {
+      margin-top: 11px;
+      font-size: 15px;
+      display: inline-block;
+      border-top: 2em solid transparent;
+      border-left: 2.6em solid #832032;
+      height: 0;
+      width: 0;
+      position: relative;
+    }
+
+    .mail:before {
+      content: '';
+      top: -2.5em;
+      left: -2.95em;
+      display: block;
+      position: absolute;
+      border-top: 1.2em solid #832032;
+      border-left: 1.6em solid transparent;
+      border-right: 1.6em solid transparent;
+      border-bottom: 1em solid transparent;
+      font-size: 0.8em;
+    }
+
+    .mail::after {
+      display: block;
+      content: "";
+      position: absolute;
+      border-top: 2em solid transparent;
+      border-right: 2.6em solid #832032;
+      height: 0;
+      width: 0;
+      left: -2.18em;
+      bottom: 0;
+    }
+
+    #checkcontact {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .contactform {
+      overflow: hidden;
+      max-height: 0px;
+      -webkit-transition: all linear 1s;
+      -moz-transition: all linear 1s;
+      -o-transition: all linear 1s;
+      -ms-transition: all linear 1s;
+      transition: all linear 1s;
+    }
+
+    #checkcontact:checked+.contactform {
+      max-height: 1000px;
+    }
+
+    .input_wrapper {
+      position: relative;
+    }
+
+    .textarea_wrapper textarea {
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      background: white;
+      border: 1px solid #DADADA;
+      box-shadow: 0 0 1px 0 #E4E4E4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 1em;
+      -webkit-transition: all 250ms ease;
+      -moz-transition: all 250ms ease;
+      -ms-transition: all 250ms ease;
+      -o-transition: all 250ms ease;
+      transition: all 250ms ease;
+      color: #5E5E5E;
+    }
+
+    .input_wrapper input[type="text"] {
+      margin-top: 1em;
+      display: block;
+      width: 100%;
+      background: white;
+      border: 1px solid #DADADA;
+      box-shadow: 0 0 1px 0 #E4E4E4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 1em;
+      -webkit-transition: all 250ms ease;
+      -moz-transition: all 250ms ease;
+      -ms-transition: all 250ms ease;
+      -o-transition: all 250ms ease;
+      transition: all 250ms ease;
+      color: #5E5E5E;
+      text-indent: 15%;
+    }
+
+    .input_wrapper input[type="text"]:focus {
+      background: rgba(242, 56, 90, 0.05);
+      box-shadow: inset 2px 2px 5px 0 #DADADA;
+      outline: none;
+      text-indent: 0;
+    }
+
+    .input_wrapper label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: #F2385A;
+      color: white;
+      font-family: Oswald, sans-serif;
+      box-sizing: border-box;
+      width: 15%;
+      text-align: center;
+      line-height: 2.8em;
+      -webkit-transition: all 250ms ease;
+      -moz-transition: all 250ms ease;
+      -ms-transition: all 250ms ease;
+      -o-transition: all 250ms ease;
+      transition: all 250ms ease;
+    }
+
+    .input_wrapper input[type="text"]:focus+label {
+      left: 85%;
+    }
+
+    .textarea_wrapper textarea {
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      min-height: 150px;
+      background: white;
+      border: 1px solid #DADADA;
+      box-shadow: 0 0 1px 0 #E4E4E4;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 1em;
+      -webkit-transition: all 250ms ease;
+      -moz-transition: all 250ms ease;
+      -ms-transition: all 250ms ease;
+      -o-transition: all 250ms ease;
+      transition: all 250ms ease;
+      color: #5E5E5E;
+    }
+
+    .textarea_wrapper textarea:focus {
+      background: rgba(242, 56, 90, 0.05);
+      box-shadow: inset 2px 2px 5px 0 #DADADA;
+      outline: none;
+    }
+
+    .submit_wrapper {
+      text-align: center;
+    }
+
+    .submit_wrapper input {
+      text-align: center;
+      display: inline-block;
+      width: 40%;
+      height: 50px;
+      margin-top: 1em;
+      margin-bottom: 6px;
+      cursor: pointer;
+      background: #F2385A;
+      color: white;
+      font-family: Oswald, sans-serif;
+      font-size: 1em;
+      border: none;
+      -webkit-box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
+      box-shadow: 1px 1px 0 0 #832032, 2px 2px 0 0 #832032, 3px 3px 0 0 #832032;
+      -webkit-appearance: none;
+      -webkit-transition: all 250ms ease;
+      -moz-transition: all 250ms ease;
+      -ms-transition: all 250ms ease;
+      -o-transition: all 250ms ease;
+      transition: all 250ms ease;
+    }
+
+    .submit_wrapper input:hover {
+      -webkit-box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+      box-shadow: 1px 1px 0 0 #832032, 0px 0px 0 0 #832032, 0px 0px 0 0 #832032;
+      margin-top: 22px;
+      margin-left: 2px;
+      margin-bottom: 0px;
+    }
+
+    @media (max-width: 500px) {
+      #contact {
+        width: 100%;
+      }
+
+      .input_wrapper label {
+        line-height: 3.5em;
+        font-size: 0.8em;
+      }
+    }
+
+    /* Footer Code End */
   </style>
 
 
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="mb">
 
 
-<!-- Negivition Bar Start -->
-<div class="nav">
+  <!-- Negivition Bar Start -->
+  <div class="nav">
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
       <div class="nav-title">
-                                                    <!-- Logo Link Below -->
-        <img height="30px" width="150px"  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png" alt="Logo Loding">
+        <!-- Logo Link Below -->
+        <img height="30px" width="150px"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJHMZf6FGSsNqYMHyIgOZS__bCerP5XZ8IQvn6g2r_5NsUL52CxS288tScf0rprJLZoZLv3c0tyDlBCh2nhi_aPc2-cxZm69m_DLqaueGSJWZLjQddDKQxTXIfZrTE9wiKHoisWIlIk0UjNpthtpGddaocdk75xOazhh-v1TiXGmtJS8V6pC5uSOOmBg/s320/20230301_110001.png"
+          alt="Logo Loding">
       </div>
     </div>
     <div class="nav-btn">
@@ -575,75 +637,99 @@ font-size: 0.8em;
       </label>
     </div>
     <div class="nav-links">
-      <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/" target="_blank"><B> HOME</B></a>
-      <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B> ABOUT US</B></a>
+      <a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/" target="_blank"><B> HOME</B></a>
+      <a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/developer.html" target="_blank"><B> ABOUT US</B></a>
       <a href="https://gpbgp.org/" target="_blank"><B>INSTITUTE</B></a>
-      <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html" target="_blank"><B>CONTACT</B></a>
-      <a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html" target="_blank"><B>DEVELOPER</B></a>
+      <a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/contact.html" target="_blank"><B>CONTACT</B></a>
+      <a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/developer.html" target="_blank"><B>DEVELOPER</B></a>
     </div>
   </div>
-      <section id="contact">
-        <div class="sectionheader">	<h1>CONTACT</h1></div>
-        <article>
-        <p>Fill the details and get a opportunity to enter in a virtual world.</p>
-            
-                <label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
-        
-                <form action="" method="post" class="contactform">
-                    <p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_num"><label for="contact_num">NAME</label></p>
-                    <p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
-                    <p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_subject"><label for="contact_subjet">SUBJECT</label></p>
-                    <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
-                    <p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>			
-                </form>
-        </article>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section></section>
+  <section id="contact">
+    <div class="sectionheader">
+      <h1>CONTACT</h1>
+    </div>
+    <article>
+      <p>Fill the details and get a opportunity to enter in a virtual world.</p>
 
-    <section></section>
-    <footer class="footer-distributed">
-        <div class="footer-right">
-            <table>
-                <tr>
-                    <ul class="a12345">
-                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-github"></i></a></li></td>
-                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-linkedin"></i></a></li></td>
-                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-twitter"></i></a></li></td>
-                    <td><li class="lifc"><a href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><i class="fa-brands fa-instagram"></i></a></li></td>
-                    </ul>
-                </tr>
-            </table>
-        </div>
-        <div class="footer-left">
-            <p class="footer-links">
-                <ul class="abcc">
-    <li class="lifc"><a class="link-1" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/"><b class="flh"> Home</b></a></li>
-    <!-- <li class="lifc"><a class="link-2" href="developer.html"><b class="flh">About</b></a></li> -->
-    <li class="lifc"><a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a></li>
-    <li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/contact.html"><b class="flh">Contact</b></a></li>
-    <li class="lifc"><a class="link-2" href="https://nickykumarrahul.github.io/virtual-world-bhagalpur/developer.html"><b class="flh"> Developer </b></a></li>
-    <li class="lifc"><a class="link-2" href="#"><b class="flh"></b></a></li>
-                </ul>
-            </p>
-            <p class="pfc">Project :-  <b>Virtual World</b> 
-              DEVELOPER <b> RAHUL,</b> <br>
-               <b> Shubham,</b> 
-               <b> Amarjeet,</b> 
-           <b> Ravi Ranjan</b> <br> in &copy; Feb 2023 </p>
-        </div>
-    </footer>
-       
+      <label for="checkcontact" class="contactbutton">
+        <div class="mail"></div>
+      </label><input id="checkcontact" type="checkbox">
+
+      <form action="" method="post" class="contactform">
+        <p class="input_wrapper"><input type="text" name="contact_nom" value="" id="contact_num"><label
+            for="contact_num">NAME</label></p>
+        <p class="input_wrapper"><input type="text" name="contact_email" value="" id="contact_email"><label
+            for="contact_email">EMAIL</label></p>
+        <p class="input_wrapper"><input type="text" name="contact_sujet" value="" id="contact_subject"><label
+            for="contact_subjet">SUBJECT</label></p>
+        <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
+        <p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>
+      </form>
+    </article>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section></section>
+
+  <section></section>
+  <footer class="footer-distributed">
+    <div class="footer-right">
+      <table>
+        <tr>
+          <ul class="a12345">
+            <td>
+              <li class="lifc"><a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/developer.html"><i
+                    class="fa-brands fa-github"></i></a></li>
+            </td>
+            <td>
+              <li class="lifc"><a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/developer.html"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+            </td>
+            <td>
+              <li class="lifc"><a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/developer.html"><i
+                    class="fa-brands fa-twitter"></i></a></li>
+            </td>
+            <td>
+              <li class="lifc"><a href="https://rahulkumarnikki.github.io/Virtual_World_BGP/developer.html"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+            </td>
+          </ul>
+        </tr>
+      </table>
+    </div>
+    <div class="footer-left">
+      <p class="footer-links">
+      <ul class="abcc">
+        <li class="lifc"><a class="link-1" href="https://rahulkumarnikki.github.io/Virtual_World_BGP/"><b class="flh">
+              Home</b></a></li>
+        <!-- <li class="lifc"><a class="link-2" href="developer.html"><b class="flh">About</b></a></li> -->
+        <li class="lifc"><a class="link-2" href="https://gpbgp.org/"><b class="flh">Institute</b></a></li>
+        <li class="lifc"><a class="link-2" href="https://rahulkumarnikki.github.io/Virtual_World_BGP/contact.html"><b
+              class="flh">Contact</b></a></li>
+        <li class="lifc"><a class="link-2" href="https://rahulkumarnikki.github.io/Virtual_World_BGP/developer.html"><b
+              class="flh"> Developer </b></a></li>
+        <li class="lifc"><a class="link-2" href="#"><b class="flh"></b></a></li>
+      </ul>
+      </p>
+      <p class="pfc">Project :- <b>Virtual World</b>
+        DEVELOPER <b> RAHUL,</b> <br>
+        <b> Shubham,</b>
+        <b> Amarjeet,</b>
+        <b> Ravi Ranjan</b> <br> in &copy; Feb 2023
+      </p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
